@@ -452,6 +452,16 @@
    "description": "The legendary Pouākai: a bird so large that it can pick up, carry off and destroy almost any number of Bloons of almost any size. Requires 3 additional Condor Handlers to control."
   },
   {
+   "name": "Ballistic Obliteration Missile Bunker",
+   "tower": "Bomb Shooter",
+   "category": "Primary",
+   "path": -1,
+   "tier": 6,
+   "cost": 650000,
+   "icon": "BTD6_BombShooter_BombParagonIcon.png",
+   "description": "Cluster explosions, anti-MOAB explosions, Bloon stunning explosions, knockback explosions. BOMB has it all!"
+  },
+  {
    "name": "Bigger Bombs",
    "tower": "Bomb Shooter",
    "category": "Primary",
@@ -602,6 +612,16 @@
    "description": "Deals much more damage and gains the passive Bomb Storm Ability - when lives would be lost, the Bomb Storm automatically triggers, which destroys all but the biggest of Bloons."
   },
   {
+   "name": "Glaive Dominus",
+   "tower": "Boomerang Monkey",
+   "category": "Primary",
+   "path": -1,
+   "tier": 6,
+   "cost": 375000,
+   "icon": "BTD6_BoomerangMonkey_GlaiveDominusUpgradeIcon.png",
+   "description": "The Bloons will look upon my Glaives, and they will know fear."
+  },
+  {
    "name": "Improved Rangs",
    "tower": "Boomerang Monkey",
    "category": "Primary",
@@ -750,6 +770,16 @@
    "cost": 50000,
    "icon": "BTD6_BoomerangMonkey_MoabDominationUpgradeIcon.png",
    "description": "Special knockback kylies trigger more often and do lots of extra damage."
+  },
+  {
+   "name": "Apex Plasma Master",
+   "tower": "Dart Monkey",
+   "category": "Primary",
+   "path": -1,
+   "tier": 6,
+   "cost": 150000,
+   "icon": "BTD6_DartMonkey_ApexPlasmaMasterUpgradeIcon.png",
+   "description": "Fill the area with Bloon shredding plasma juggernaut balls, leaving nothing behind..."
   },
   {
    "name": "Sharp Shots",
@@ -1202,6 +1232,16 @@
    "description": "They say Desperado hits so hard it's like a mine blast."
   },
   {
+   "name": "Root of all Nature",
+   "tower": "Druid",
+   "category": "Magic",
+   "path": -1,
+   "tier": 6,
+   "cost": 475000,
+   "icon": "BTD6_DruidMonkey_RootOfAllNatureUpgradeIcon.png",
+   "description": "That from which all life branches."
+  },
+  {
    "name": "Hard Thorns",
    "tower": "Druid",
    "category": "Magic",
@@ -1350,6 +1390,16 @@
    "cost": 45000,
    "icon": "BTD6_DruidMonkey_AvatarofWrathUpgradeIcon.png",
    "description": "The more Bloons there are, the more damage it does!"
+  },
+  {
+   "name": "Master Builder",
+   "tower": "Engineer Monkey",
+   "category": "Support",
+   "path": -1,
+   "tier": 6,
+   "cost": 600000,
+   "icon": "BTD6_EngineerMonkey_MasterBuilderUpgradeIcon.png",
+   "description": "Monkey engineering developed to perfection. Can Overclock other Paragons, and creates three Mega Sentries that can build their own sentries."
   },
   {
    "name": "Sentry Gun",
@@ -1802,6 +1852,16 @@
    "description": "Upgraded weapons. Also automatically calls in 3 more Comanches. Permanently."
   },
   {
+   "name": "Herald of Everfrost",
+   "tower": "Ice Monkey",
+   "category": "Primary",
+   "path": -1,
+   "tier": 6,
+   "cost": 300000,
+   "icon": "BTD6_IceMonkey_IceMonkeyParagonIcon.png",
+   "description": "As the eternal frost descends and cold reigns supreme, even the baddest of Bloons are helpless against its icy grasp."
+  },
+  {
    "name": "Permafrost",
    "tower": "Ice Monkey",
    "category": "Primary",
@@ -2102,6 +2162,16 @@
    "description": "This elder can echo its irresistible tune anywhere. While devastating to Bloons, the call inspires nearby Heroes with improved range and cooldowns, and Magic Monkeys extra pierce."
   },
   {
+   "name": "Goliath Doomship",
+   "tower": "Monkey Ace",
+   "category": "Military",
+   "path": -1,
+   "tier": 6,
+   "cost": 900000,
+   "icon": "BTD6_MonkeyAce_GoliathDoomshipUpgradeIcon.png",
+   "description": "A flying shadow of darkness spells Bloon obliteration."
+  },
+  {
    "name": "Rapid Fire",
    "tower": "Monkey Ace",
    "category": "Military",
@@ -2252,6 +2322,16 @@
    "description": "This is a BIG plane."
   },
   {
+   "name": "Navarch of the Seas",
+   "tower": "Monkey Buccaneer",
+   "category": "Military",
+   "path": -1,
+   "tier": 6,
+   "cost": 550000,
+   "icon": "BTD6_MonkeyBuccaneer_NavarchOfTheSeasUpgradeIcon.png",
+   "description": "The greatest thing ever to float on water."
+  },
+  {
    "name": "Faster Shooting",
    "tower": "Monkey Buccaneer",
    "category": "Military",
@@ -2400,6 +2480,16 @@
    "cost": 23000,
    "icon": "BTD6_MonkeyBuccaneer_TradeEmpireUpgradeIcon.png",
    "description": "Generates more cash per round. Grants up to 20 Merchantmen bonus damage and an income bonus that increases with every Merchantman owned up to 20 times."
+  },
+  {
+   "name": "Nautic Siege Core",
+   "tower": "Monkey Sub",
+   "category": "Military",
+   "path": -1,
+   "tier": 6,
+   "cost": 400000,
+   "icon": "BTD6_MonkeySub_FinalStrikeIconAA.png",
+   "description": "Unfathomable range, power, and synergies with other Monkey Towers and Heroes put all Bloons under assault."
   },
   {
    "name": "Longer Range",
@@ -2852,6 +2942,16 @@
    "description": "Superhot burny stuff that incinerates MOAB-Class Bloons with ease."
   },
   {
+   "name": "Ascended Shadow",
+   "tower": "Ninja Monkey",
+   "category": "Magic",
+   "path": -1,
+   "tier": 6,
+   "cost": 500000,
+   "icon": "BTD6_NinjaMonkey_AscendedShadowUpgradeIcon.png",
+   "description": "The complete assassin package for dealing with any Bloon threat."
+  },
+  {
    "name": "Ninja Discipline",
    "tower": "Ninja Monkey",
    "category": "Magic",
@@ -3152,6 +3252,16 @@
    "description": "Winter's bite deepens in the presence of more frozen Bloons, drawing a brief surge of damage from shattered foes. Frozen MOABs burst in ruinous iceplosions."
   },
   {
+   "name": "S.P.I.D.E.R. Monkey",
+   "tower": "Sniper Monkey",
+   "category": "Military",
+   "path": -1,
+   "tier": 6,
+   "cost": 800000,
+   "icon": "BTD6_SniperMonkey_ParagonSniperUpgradeIcon.png",
+   "description": "Simia ex umbris"
+  },
+  {
    "name": "Full Metal Jacket",
    "tower": "Sniper Monkey",
    "category": "Military",
@@ -3300,6 +3410,16 @@
    "cost": 14900,
    "icon": "BTD6_SniperMonkey_EliteDefenderUpgradeIcon.png",
    "description": "Fires super fast and does more damage to MOAB-class Bloons. Fires faster the further the Bloons are along the track. Gains 4x attack speed briefly on losing lives."
+  },
+  {
+   "name": "Mega Massive Munitions Factory",
+   "tower": "Spike Factory",
+   "category": "Support",
+   "path": -1,
+   "tier": 6,
+   "cost": 750000,
+   "icon": "BTD6_SpikeFactory_SpikeFactoryParagonIcon.png",
+   "description": "A factory of explosive spike Bloon annihilation."
   },
   {
    "name": "Bigger Stacks",
@@ -3602,6 +3722,16 @@
    "description": "We turn to him, when all hope is lost..."
   },
   {
+   "name": "Crucible of Steel and Flame",
+   "tower": "Tack Shooter",
+   "category": "Primary",
+   "path": -1,
+   "tier": 6,
+   "cost": 200000,
+   "icon": "BTD6_TackShooter_TackShooterParagonIcon.png",
+   "description": "Spinning blades of Bloon immolation!"
+  },
+  {
    "name": "Faster Shooting",
    "tower": "Tack Shooter",
    "category": "Primary",
@@ -3750,6 +3880,16 @@
    "cost": 20000,
    "icon": "BTD6_TackShooter_TheTackZoneUpgradeIcon.png",
    "description": "Many, many tacks."
+  },
+  {
+   "name": "Magus Perfectus",
+   "tower": "Wizard Monkey",
+   "category": "Magic",
+   "path": -1,
+   "tier": 6,
+   "cost": 800000,
+   "icon": "BTD6_WizardMonkey_MagusPerfectusUpgradeIcon.png",
+   "description": "Only the most perfect Wizard can channel the ancient powers of the beyond."
   },
   {
    "name": "Guided Magic",

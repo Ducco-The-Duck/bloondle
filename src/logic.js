@@ -2,6 +2,9 @@
 
 export const MAX_GUESSES = 6;
 
+/** Paragons are stored with path -1. */
+export const pathLabel = (u) => (u.path < 0 ? "Paragon" : `Path ${u.path}`);
+
 export const upgradeId = (u) => `${u.tower}|${u.name}`;
 
 /** Compare a guess against the answer. Numeric clues say which way the answer lies. */

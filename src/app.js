@@ -1,4 +1,4 @@
-import { MAX_GUESSES, compare, isWin, upgradeId, dailyAnswer, randomAnswer, dayKey, shareText } from "./logic.js";
+import { MAX_GUESSES, pathLabel, compare, isWin, upgradeId, dailyAnswer, randomAnswer, dayKey, shareText } from "./logic.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -65,7 +65,7 @@ function renderGuess({ upgrade: u, clues }) {
     name,
     cell(u.tower, clues.tower),
     cell(u.category, clues.category),
-    cell(`Path ${u.path}`, clues.path),
+    cell(pathLabel(u), clues.path),
     cell(`${u.tier}${arrow(clues.tier)}`, clues.tier),
     cell(`$${u.cost.toLocaleString()}${arrow(clues.cost)}`, clues.cost),
   );
@@ -97,7 +97,7 @@ function renderEnd() {
   const txt = document.createElement("div");
   txt.innerHTML = "<b></b><br><small></small>";
   txt.querySelector("b").textContent = a.name;
-  txt.querySelector("small").textContent = `${a.tower} · Path ${a.path} · Tier ${a.tier} · $${a.cost.toLocaleString()}`;
+  txt.querySelector("small").textContent = `${a.tower} · ${pathLabel(a)} · Tier ${a.tier} · $${a.cost.toLocaleString()}`;
   ans.append(icon(a), txt);
   const desc = document.createElement("p");
   desc.textContent = a.description;

@@ -43,7 +43,7 @@ const category = new Map(towers.filter((t) => t.cost).map((t) => [t.name, t.cate
 const rows = await cargo(
   "btd6_upgrades",
   "tower,name,icon,description,cost,path,tier",
-  "unused=0 AND path>0 AND tier>=1 AND tier<=5",
+  "unused=0 AND ((path>0 AND tier>=1 AND tier<=5) OR (path=-1 AND tier=6))",
 );
 
 const upgrades = rows

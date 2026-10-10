@@ -7,10 +7,10 @@ You get 6 guesses to guess the correct upgrade. Information with each guess:
 2. Tier (more/less)
 3. Category (Military/Primary/Magic/Support)
 4. Tower (match / no match)
-5. Path (match / no match)
+5. Path (match / no match; paragons count as their own path)
 
 A new upgrade every day (UTC); everyone gets the same one. After a game you can play random ones.
-All 390 tier 1-5 upgrades of the 26 towers are in the pool (paragons aren't).
+All 404 upgrades are in the pool: the tier 1-5 upgrades of the 26 towers, plus the 14 paragons (tier 6, path "Paragon").
 
 ### Running it
 No build step, it's a static site:

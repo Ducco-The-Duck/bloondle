@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { compare, isWin, dailyAnswer, shareText, upgradeId, MAX_GUESSES } from "./logic.js";
+import { pathLabel, compare, isWin, dailyAnswer, shareText, upgradeId, MAX_GUESSES } from "./logic.js";
 
 const { upgrades } = JSON.parse(readFileSync(new URL("../data/upgrades.json", import.meta.url)));
 const find = (tower, name) => upgrades.find((u) => u.tower === tower && u.name === name);
@@ -26,8 +26,18 @@ assert.ok(picks.size > 40, `daily picks look clumped: ${picks.size}/60`);
 
 // Data invariants the UI relies on.
 for (const u of upgrades) {
-  assert.ok(u.tier >= 1 && u.tier <= 5 && [1, 2, 3].includes(u.path) && u.cost > 0, upgradeId(u));
+  const paragon = u.path === -1;
+  assert.ok(paragon ? u.tier === 6 : u.tier >= 1 && u.tier <= 5 && [1, 2, 3].includes(u.path), upgradeId(u));
+  assert.ok(u.cost > 0, upgradeId(u));
 }
+
+// Paragons: tier 6, own path label, tier clue points up to them.
+const paragon = find("Dart Monkey", "Apex Plasma Master");
+assert.equal(pathLabel(paragon), "Paragon");
+assert.equal(pathLabel(crossbow), "Path 3");
+assert.equal(compare(crossbow, paragon).tier, "higher");
+assert.equal(compare(crossbow, paragon).path, "wrong");
+assert.equal(upgrades.filter((u) => u.tier === 6).length, 14);
 
 // Share text.
 const g = [{ id: upgradeId(sun), clues: compare(sun, crossbow) }, { id: upgradeId(crossbow), clues: compare(crossbow, crossbow) }];
