@@ -1,0 +1,10 @@
+{
+  "name": "bloondle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "test": "node src/logic.test.mjs",
+    "fetch-data": "NODE_USE_ENV_PROXY=1 node scripts/fetch-data.mjs"
+  }
+}
