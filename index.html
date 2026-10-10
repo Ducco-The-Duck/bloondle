@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bloondle</title>
+  <meta name="description" content="Guess the Bloons TD 6 upgrade in six tries.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Bloon<span>dle</span></h1>
+      <p class="sub">Guess the Bloons TD 6 upgrade.</p>
+      <p id="mode" class="mode"></p>
+    </header>
+
+    <form id="form" autocomplete="off">
+      <div class="search">
+        <input id="input" type="text" placeholder="Type an upgrade or tower…" aria-label="Guess an upgrade"
+               role="combobox" aria-expanded="false" aria-controls="options" aria-autocomplete="list">
+        <ul id="options" role="listbox" hidden></ul>
+      </div>
+      <button id="submit" type="submit">Guess</button>
+    </form>
+    <p id="remaining" class="remaining"></p>
+
+    <div class="scroll">
+      <div class="grid head" aria-hidden="true">
+        <span>Upgrade</span><span>Tower</span><span>Type</span><span>Path</span><span>Tier</span><span>Cost</span>
+      </div>
+      <div id="guesses"></div>
+    </div>
+
+    <section id="end" class="end" hidden></section>
+
+    <details class="help">
+      <summary>How to play</summary>
+      <ul>
+        <li>Pick an upgrade. Each guess tells you how it compares to the secret one.</li>
+        <li><b class="chip correct">Green</b> means it matches. <b class="chip wrong">Red</b> means it doesn't.</li>
+        <li><b>Tier</b> and <b>Cost</b> show an arrow pointing toward the answer: 🔼 means the answer is higher.</li>
+        <li><b>Type</b> is the tower's category: Primary, Military, Magic or Support.</li>
+        <li>Paragons are in the pool as tier 6 with their own path. Costs are Medium difficulty. You get 6 guesses.</li>
+        <li>A new upgrade every day (UTC). Data from <a href="https://www.bloonswiki.com">bloonswiki.com</a>.</li>
+      </ul>
+    </details>
+  </main>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
